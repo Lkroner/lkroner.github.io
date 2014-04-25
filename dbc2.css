@@ -2,7 +2,7 @@ body{
   background-color:fuchsia;
 }
 .green{
-	color:yellowgreen;
+  color:yellowgreen;
 }
 #header{
   font-family: Ariel, sans-serif;
@@ -55,6 +55,18 @@ a:active{
   color: slategrey;
   font-size: 12pt;
 }
+.image { 
+   position: relative; 
+   width: 100%;
+}
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+   color: white;
+   font-size: 18px;
+}
 #footer{
   margin: 10px 10px 10px 170px;
   padding:10px 10px 10px 200px;
@@ -63,3 +75,4 @@ a:active{
   font-family: Ariel, sans-serif;
   color: white;
 }
+
