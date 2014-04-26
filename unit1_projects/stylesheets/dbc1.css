@@ -1,0 +1,56 @@
+body {
+      color: plum;
+      background-color: mintcream;
+      font-family: "Arial", sans-serif;
+      line-height: 20px    
+}
+h1 {
+  font-family: "Arial";
+  font-size: 50px;
+  line-height: 90%;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: left;
+  letter-spacing:
+}  
+#header {
+  color: dimgray; 
+  background-color: mintcream
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+}
+a {
+   color: darkgray;
+   background-color: white;
+   text-decoration: none;
+}
+a:link { /* unvisited link */
+  color: darkgray;
+}
+a:visited { /* visited link */
+  color: darkgray;
+} 
+a:hover { /* moused over link */
+  color: plum;
+}  
+a:active { /* current link */
+  color: purple;
+} 
+a:focus {  /* focused link */
+  color: purple;
+}
+.location {
+  color:purple;
+  background-color: mintcream
+}
+ table thead {
+   color: dimgray;
+   background-color: mintcream
+}
+input[type="text"] {
+  background-color: white;
+}
+  a.footer{
+  text-shadow: 2px 2px darkseagreen; 
+  background-color: mintcream;  
+}
