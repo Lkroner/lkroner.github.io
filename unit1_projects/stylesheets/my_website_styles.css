@@ -62,15 +62,6 @@ a:active{
   color: slategrey;
   font-size: 12pt;
 }
-h2 { 
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
-   color: white;
-   font-size: 18px;
-   font-family: Ariel, sans-serif;
-}
 footer{
   margin: 1em;
   padding: 1.5em;
