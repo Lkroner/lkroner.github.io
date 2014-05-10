@@ -24,20 +24,28 @@ header ul li{
   list-style: none;
   font-size: 14px;
 }
+h1{
+  font-family: "Open Sans", Ariel, sans-serif;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+h2{
+
+}
 a:link{
   color: #bfff00;
   text-decoration:none;
 }
 a:visited{
-  color:#00FF00;
+  color:#bfff00;
   text-decoration:none;
 } 
 a:hover{
-  color: black;
-  text-decoration: line-through;
+  color: #bfff00;
+  text-decoration: none;
 }
 a:active{
-  color:#0000FF;
+  color:#bfff00;
   text-decoration:none;
 }
 .circular {
@@ -58,7 +66,7 @@ a:active{
   margin: auto;
   padding: 190px;
   text-align: left;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: slategrey;
   font-size: 12pt;
 }
