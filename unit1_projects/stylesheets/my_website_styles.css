@@ -29,8 +29,15 @@ h1{
   letter-spacing: 4px;
   font-size: 14px;
 }
-h2{
-
+h2{  
+  font-family: "Open Sans", Ariel, sans-serif;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+h4{
+  font-family: "Open Sans", Ariel, sans-serif;
+  letter-spacing: 4px;
+  font-size: 16px;
 }
 a:link{
   color: #bfff00;
