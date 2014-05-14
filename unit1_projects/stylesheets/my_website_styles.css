@@ -36,8 +36,10 @@ h2{
 }
 h4{
   font-family: "Open Sans", Ariel, sans-serif;
-  letter-spacing: 4px;
   font-size: 16px;
+}
+p{
+  font-family: "Open Sans", Ariel, sans-serif;
 }
 a:link{
   color: #bfff00;
