@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lauren Kroner</title>
+  <link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/my_website_styles.css">
+</head>
+ <body>
+   <title>Lauren Kroner</title>
+      <header>
+        <ul>
+          <li><a class="logo" href="index.html"><span style="color:black">Lauren Kroner</span></a></li>
+          <li><a href="about_page.html">About</a></li>
+          <li><a href="blog_page.html">Blog</a></li>
+          <li><a href="work_page.html">Work</a></li>
+        </ul>  
+      </header>
+       <div class="circular"></div>
+        <div id="content">
+          <section>
+             <h2>Arrays vs Hashes: What Are They?</h2> 
+                <p>
+                 Today I'm going to be looking at Ruby hashes and arrays.  What are they? What are they good for? And how do you know which one to use and when? On the surface, they both allow you to perform common tasks such as adding data, accessing data, and removing data. What sets them apart is how they work behind the scenes, and this difference has a significant impact in how and when you would use them.
+                </p> 
+                <p>
+                 Lets start off with defining the two:
+                </p>
+                <h4>Ruby Arrays - The Ordered List</h4>
+                <p>
+                 Arrays are a list of items in order. Like - a, b, c, d.
+                <br>
+                 Array indexing starts at 0, as in C or Java. A negative index is assumed to be relative to the end of the array---that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+                <br>
+                <br>
+                 When to Use Arrays?
+                 <br>
+                 <br>
+                 - When you need to iterate over the data. Iterating through hashes, which are multi-dimensional, are much harder to work with when looping through the data. 
+                 - When you need the data to be in sorted order to do operations like range searches or nearest-neighbor lookups, but if you don't need to do that, it's probably not appropriate.
+                </p>
+                <h4>Ruby Hashes - The Dictionary</h4>
+                <p>
+                 A Hash is a dictionary-like collection of unique keys and their values. Like - Lauren likes metal, Suzie likes hip-hop, Ashton likes emo. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.
+                 <br>
+                 <br>
+                 Hashes enumerate their values in the order that the corresponding keys were inserted. 
+                 <br>
+                 <br>
+                 When to Use Hashes? 
+                 <br>
+                 <br>
+                 - When your going to want to easily search the data later or add new data. Hash tables speed up manual searching because instead of looking through the entire list using indeices(arrays) you can narrow it down based on what the item starts with, and you can narrow down the search quickly and easily.
+                </p>
+                <h5>Sources</h5>
+                <p>
+                http://www.ruby-doc.org/core-2.1.1/Array.html   
+                http://www.kirupa.com/html5/hashtables_vs_arrays.htm 
+                </p> 
+          </section>  
+          <a href="blog_page.html">Back</a>    	
+        </div>
+            <footer>
+                  <p>© Lauren Kroner</p>             
+            </footer>
+ </body>
+</html>
