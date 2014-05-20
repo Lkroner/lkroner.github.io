@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lauren Kroner</title>
+  <link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/my_website_styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+ <body>
+   <title>Lauren Kroner</title>
+      <header>
+        <ul>
+          <li><a class="logo" href="index.html"><span style="color:black">Lauren Kroner</span></a></li>
+          <li><a href="about_page.html">About</a></li>
+          <li><a href="blog_page.html">Blog</a></li>
+          <li><a href="work_page.html">Work</a></li>
+        </ul>  
+      </header>
+       <div class="circular"></div>
+        <div id="content">
+          <section>
+             <h2>Class Methods vs Instance Methods</h2>
+             <p>
+              As you know(or now know!) a Ruby <strong>class</strong> consists mostly of a collection of method definitions. It stores them foremostly for the purpose of having objects created that are instances of that class. Defining a class lets you group methods into convenient bundles, so that you can quickly create many objects that behave the same way. This is an ideal way to execute one process on a large set of data objects. <strong>Instances</strong> then, are the objects created by a specific the class, they are instances of that class. 
+              </p>
+              <p>
+              So any method I can call on a class, I can also call on an instance of a class, right? Not quite. Ruby class methods are a tricky subject. Unlike other languages in which there are a greater difference between class methods and instance methods, in Ruby, you won't be able to tell how and where the corresponding method was defined.
+              </p>
+              You need to remember these things:
+              <ul>
+                <li>Classes are objects.</li>
+                <li>Instances of classes are objects.</li>
+                <li>A class object has its own methods, it own state, its own identity, <em>It doesn't share these things with instances of itself.</em></li>
+              </ul>
+
+              So where exactly <strong>do</strong> classes get their methods from? Class can use methods from three areas: 
+
+              <ol>
+                <li>Instances of class can call methods that are defined as instance methods in their class.</li>
+                <li>Instances of Class have access to the instance methods defined in Module</li>
+                <li>Or instances can call a singleton method of a class object.</em></li>
+              </ol>
+              <p>
+              Let me demonstrate:
+              </p>
+              <img src ="unit1_projects/images/week5_tech_blog1.png">
+              <p>
+              See the difference? bar is a <strong>class method</strong>, so calling bar on the Lauren class works fine. insta is an <strong>instance method</strong>, so calling insta on the Lauren class raises a NoMethodError. Then, on the next couple lines, we call both methods on an instance of Lauren (Lauren.new). 
+              </p>  
+              <p>
+              The idea of a class method is that you send a message to the object that is the class rather than to one of the class's instances.
+             </p> 
+             <h4>Take Away</h4>
+             <p>
+              Class methods can only be called on classes and instance methods can only be called on an instance of a class.
+             </p>
+          </section> 
+          <a class ="back" href="blog_page.html">Back</a>    	
+        </div>
+            <footer>
+                  <p>© Lauren Kroner</p>             
+            </footer>
+ </body>
+</html>
