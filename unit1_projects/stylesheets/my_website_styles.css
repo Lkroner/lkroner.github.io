@@ -47,8 +47,9 @@ header a:active{
 h1{
   font-family: "Open Sans", Ariel, sans-serif;
   letter-spacing: 4px;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom:0;
+  font-weight: 400;
 }
 h2{  
   font-family: "Open Sans", Ariel, sans-serif;
@@ -96,15 +97,15 @@ ul{
     font-weight: 300; 
 }
 a:link{
-  color: black;
+  color: #bfff00;
   text-decoration:none;
 }
 a:visited{
-  color: black;
+  color: #bfff00;
   text-decoration:none;
 } 
 a:hover{
-  color: #bfff00;
+  color: #1d2700;
   text-decoration: none;
 }
 a:active{
@@ -131,7 +132,8 @@ a:active{
   text-align: left;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 2px;
 }
 footer{
   margin: 1em;
