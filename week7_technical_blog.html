@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lauren Kroner</title>
+  <link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/my_website_styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+ <body>
+   <title>Lauren Kroner</title>
+      <header>
+        <ul>
+          <li><a class="logo" href="index.html"><span style="color:black">Lauren Kroner</span></a></li>
+          <li><a href="about_page.html">About</a></li>
+          <li><a href="blog_page.html">Blog</a></li>
+          <li><a href="work_page.html">Work</a></li>
+        </ul>  
+      </header>
+       <div class="circular"></div>
+        <div id="content">
+          <section>
+             <h2>Object_Oriented Design vs Functional Programming</h2>
+             <h6>May 27, 2014</h6>
+             <p>
+              <br>
+             <img src="http://www.virtuosimedia.com/includes/Files/Uploaded/Images/Articles/Lead/oop.png" width="97%">
+             <br>
+            </p>
+             <p>
+              The debate between when and where to use what type of programming is one that rages on today. On the two ends of the programming spectrum you have Functional Programming(FP) and Object-Oriented  Programming(OOP).
+            </p>
+            <p>
+            <strong>Object-oriented design</strong> organizes programs as objects: data structures consisting of datafields and methods together with their interactions(Ruby, Python, Java, PHP). <strong>Functional design</strong> treats computation as the evaluation of mathematical functions and avoids state and mutable data(Scala, F#, Haskell, Lisp).
+            </p>
+            <p>
+            The best break down I could find comparing the two from <a href="http://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming">Stackoverflow</a>:
+            </p>
+            <p>
+              When you anticipate a different kind of software evolution:
+              <br>
+              <br>
+              * Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+            </p>
+            <p>
+              * Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
+              <br>
+              <br>
+              When evolution goes the wrong way, you have problems:
+              <br>
+              <br>
+              * Adding a new operation to an object-oriented program may require editing many class definitions to add a new method.
+              <br>
+              <br>
+              * Adding a new kind of thing to a functional program may require editing many function definitions to add a new case.
+            </p>
+            <p>
+              This problem has been well known for many years; in 1998, Phil Wadler dubbed it the "expression problem". Although some researchers think that the expression problem can be addressed with such language features as mixins, a widely accepted solution has yet to hit the mainstream.
+              <br>
+              <br>
+              What are the typical problem definitions where functional programming is a better choice?
+            </p>
+            <p>
+              Functional languages excel at manipulating symbolic data in tree form. A favorite example is compilers, where source and intermediate languages change seldom (mostly the same things), but compiler writers are always adding new translations and code improvements or optimizations (new operations on things). Compilation and translation more generally are "killer apps" for functional languages.
+            </p>
+             <a href="blog_page.html">Back</a>
+          </section>  
+              	
+        </div>
+            <footer>
+                  <p>© Lauren Kroner</p>             
+            </footer>
+ </body>
+</html>
