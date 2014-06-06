@@ -19,48 +19,90 @@
        <div class="circular"></div>
         <div id="content">
           <section>
-             <h2>Object_Oriented Design vs Functional Programming</h2>
-             <h6>May 27, 2014</h6>
+             <h2>Ways to Optimize Your SQL Queries</h2>
+             <h6>June 5, 2014</h6>
              <p>
               <br>
-             <img src="http://www.virtuosimedia.com/includes/Files/Uploaded/Images/Articles/Lead/oop.png" width="97%">
+             <img src="imgs/sql_under_construction.jpeg" width="97%">
              <br>
             </p>
              <p>
-              The debate between when and where to use what type of programming is one that rages on today. On the two ends of the programming spectrum you have Functional Programming(FP) and Object-Oriented  Programming(OOP).
+              This week has been all SQL queries and databases. It's been a fun topic! However, learning to traverse databases got me wondering: Is there an optimum way to frame my SQL queries to maximize performance? The last thing I want to do is send out queries that take too long for the database to retrieve and suck up all my processing power. Surely there are some handy tips out there to make sure I'm getting the best database bang for my SQL query buck? Turns out, there are! Here are a few of the most helpful ones I found:
+            </p>
+            <h4>Beware the SELECT *</h4>
+            <p>
+              The sql query becomes faster if you use the actual columns names in SELECT statement instead of than '*'. It's all too easy to code all your queries with SELECT '*' instead of listing the columns individually.
             </p>
             <p>
-            <strong>Object-oriented design</strong> organizes programs as objects: data structures consisting of datafields and methods together with their interactions(Ruby, Python, Java, PHP). <strong>Functional design</strong> treats computation as the evaluation of mathematical functions and avoids state and mutable data(Scala, F#, Haskell, Lisp).
+              <strong>For example:</strong> Write query as
+              <br>
+              <br>
+              <img src="imgs/week7_img4.png">
+              <br>
+              <strong>Not</strong>
+              <br>
+              <br>
+              <img src="imgs/week7_img5.png">
             </p>
             <p>
-            The best break down I could find comparing the two from <a href="http://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming">Stackoverflow</a>:
+              The problem again is that it pulls more data than you need. If you're only going to use 3-5 columns, why pull all 120? You're not only processing more data than you need, but you're also taking resources away from other processes.
             </p>
+            <h4>Index...Properly</h4>
             <p>
-              When you anticipate a different kind of software evolution:
+              <strong>Indexes and proper filtering can solve what is normally a very time-consuming process.</strong> All primary keys need indexes because they make joins faster. This also means that all tables need a primary key. This will ensure that every table has a clustered index created. So, any data retrieval operation from the table using the primary key, or any sorting operation on the primary key field or any range of primary key values specified in the where clause will retrieve data from the table very fast.
               <br>
-              <br>
-              * Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+              Lastly, be careful with adding indexes because they need to be maintained by the database. If you do many updates on that field, maintaining indexes might take more time than it saves.
             </p>
+            <h4>Watch Your Wildcard</h4>
             <p>
-              * Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
-              <br>
-              <br>
-              When evolution goes the wrong way, you have problems:
-              <br>
-              <br>
-              * Adding a new operation to an object-oriented program may require editing many class definitions to add a new method.
-              <br>
-              <br>
-              * Adding a new kind of thing to a functional program may require editing many function definitions to add a new case.
+              In SQL, wildcard is provided for us with ‘%’ symbol. <strong>Using wildcard will definitely slow down your query especially for table that are really huge.</strong> We can optimize our query with wildcard by doing a postfix wildcard instead of pre or full wildcard.
             </p>
+            <img src="imgs/week7_img3.png">
             <p>
-              This problem has been well known for many years; in 1998, Phil Wadler dubbed it the "expression problem". Although some researchers think that the expression problem can be addressed with such language features as mixins, a widely accepted solution has yet to hit the mainstream.
+              That column must be indexed for such optimize to be applied.
               <br>
-              <br>
-              What are the typical problem definitions where functional programming is a better choice?
+              P.S: Doing a full wildcard in a few million records table is equivalence to killing the database.
             </p>
+            <h4>Only Query What You Really Need</h4>
             <p>
-              Functional languages excel at manipulating symbolic data in tree form. A favorite example is compilers, where source and intermediate languages change seldom (mostly the same things), but compiler writers are always adding new translations and code improvements or optimizations (new operations on things). Compilation and translation more generally are "killer apps" for functional languages.
+              <strong>Filter as much as possible.</strong> Your Where Clause is the most important part for optimization. Use "Select *" carefully -- Specifying only the fields you need will be faster and will use less bandwidth. Joins are expensive in terms of time. Make sure that you use all the keys that relate the two tables together and don't join to unused tables -- always try to join on indexed fields.The join type is important as well (INNER, OUTER,... ).
+            </p>
+            <h4>Symbol Operators</h4>
+            <p>
+              We can optimize some of our query with symbol operator provided the column is indexed.
+            </p>
+            <img src="imgs/week7_img1.png">
+            <p>
+              Now, the above query is not optimized due to the fact that the DBMS will have to look for the value 16 THEN scan forward to value 16 and below. On the other hand, a optimized value will be
+            </p>
+            <img src="imgs/week7_img2.png">
+            <p>
+              This way the DBMS might jump straight away to value 15 instead. It’s pretty much the same way how we find a value 15 (we scan through and target ONLY 15) compare to a value smaller than 16 (we have to determine whether the value is smaller than 16; additional operation).
+            </p>
+            <h4>Not Operator</h4>
+            <p>
+              <strong>Try to avoid NOT operator in SQL.</strong> It is much faster to search for an exact match (positive operator) such as using the LIKE, IN, EXIST or = symbol operator instead of a negative operator such as NOT LIKE, NOT IN, NOT EXIST or != symbol. Using a negative operator will cause the search to find every single row to identify that they are ALL not belong or exist within the table. On the other hand, using a positive operator just stop immediately once the result has been found. Imagine you have 1 million record in a table. That’s bad.
+            </p>
+            <h4></h4>
+            <p>
+            </p>
+            <h4></h4>
+            <p>
+            </p>
+            <h4></h4>
+            <p>
+            </p>
+
+            <p>
+              
+            </p>
+            <h4>Sources</h4>
+            <p>
+            <a href="http://www.codeproject.com/Articles/34372/Top-steps-to-optimize-data-access-in-SQL-Server">Top 10 steps to optimize data access in SQL Server</a>
+            <br>
+            <a href="http://hungred.com/useful-information/ways-optimize-sql-queries/">15 Ways to Optimize Your SQL Queries</a>
+            <br>
+            <a href="http://beginner-sql-tutorial.com/sql-query-tuning.htm">SQL Tuning or SQL Optimization</a>
             </p>
              <a href="blog_page.html">Back</a>
           </section>  
