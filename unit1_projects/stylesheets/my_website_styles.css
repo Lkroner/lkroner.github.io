@@ -71,10 +71,9 @@ h1{
   margin-right: auto;
   width: 45%;
   text-align: left;
-
 }
 h2{  
-  font-family: "Hevletica Neue", Ariel, sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 4px;
   font-size: 19px;
   font-weight: 300;
@@ -84,6 +83,13 @@ h4{
   font-family: "Hevletica Neue", Ariel, sans-serif;
   font-size: 16px;
   font-weight: 300;
+  margin-top: 1em;
+  margin-bottom:0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  text-align: left;
+  color: grey;
 }
 h6{
   font-family: "Open Sans", Ariel, sans-serif;
