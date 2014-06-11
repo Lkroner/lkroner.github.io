@@ -3,10 +3,9 @@ body{
   background: white;
   font-family: "Open Sans", Ariel, sans-serif;
   /* background: white; */
-  font-size: 14px;
-  font-weight: 300; 
   color: #4e5a65;
   border-top: 1px solid #ededee;
+  text-decoration:none; 
 }
 header{
   width: 50em;
@@ -44,12 +43,19 @@ header a:active{
 section{
   border-bottom: 2px solid #f7f7f7;
   padding: 10px;
+  text-decoration:none; 
+  margin-left: auto;
+  margin-right: auto;
 }
-section p{
+section p, section h2, section h4, section h6,
+section ol, section ul, section img, section a{
   text-align: left;
   font-family: 'Open Sans', Ariel, sans-serif;
   color: #4e5a65;
-  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+  display: block;
 }
 h1{
   font-family: 'Roboto', sans-serif;
@@ -68,11 +74,10 @@ h2{
   color: #4e5a65;
   margin-top:30px;
   margin-bottom:0;
-  text-align: left;
 }
 h4{
   font-family: 'Hevletica Neue', Ariel, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   margin-top: 1em;
   margin-bottom:0;
@@ -89,9 +94,9 @@ h6{
   text-align: left;
   color: gray;
 }
-p, ol li, ol, ul, ul li{
+ol li, ol, ul, ul li{
   font-family: "Open Sans", Ariel, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 200; 
   color: #4e5a65;
 }
@@ -121,11 +126,8 @@ a:active{
 }
 #content{
   background-color: transparent;
-  font-size: 15px;
-  letter-spacing: 2px;
-  width: 45%;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 16px;
+  text-decoration:none; 
 }
 footer{
   width:15em;
