@@ -41,13 +41,13 @@ header a:active{
   text-decoration:none;
 }
 section{
-  border-bottom: 2px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
   padding: 10px;
   text-decoration:none; 
   margin-left: auto;
   margin-right: auto;
 }
-section p, section h2, section h4, section h6,
+section p, section h2, section h4, section h6, section h1
 section ol, section ul, section img, section a{
   text-align: left;
   font-family: 'Open Sans', Ariel, sans-serif;
@@ -56,7 +56,8 @@ section ol, section ul, section img, section a{
   margin-left: auto;
   width: 45%;
   display: block;
-}
+}/* Need to figure out how to CSS select for links 
+embedded in text so that the do not have a width!! */
 h1{
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
