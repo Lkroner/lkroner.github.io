@@ -1,32 +1,28 @@
 body{
-  background-color: white;
+  /* background-image: url('http://subtlepatterns.com/patterns/geometry.png'); */
+  background: white;
   font-family: "Open Sans", Ariel, sans-serif;
+  /* background: white; */
   font-size: 14px;
   font-weight: 300; 
+  border-top: 1px solid #ededee;
 }
 header{
-  left: 81px;
-  top: 81px;
-  display: inline;
-  position: fixed;
-  z-index: 100;
-  letter-spacing: 4px;
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
   background-color: transparent;
-  font-family: "Open Sans", Ariel, sans-serif;
+  font-family: "Hevletica Neue", Ariel, sans-serif;
   list-style-type: none;
   text-transform: uppercase;
-  margin: 0;
-  padding: 40px;
 }
 header ul li{
-  margin-right: 95px;
-  font-size:14px;
-}
-header ul li{
-  margin-right: 44px;
-  float: left;
+  letter-spacing: 4px;
+  font-size: 16px;
   list-style: none;
-  font-size: 14px;
+  display: inline;
+  padding: 3%;
 }
 header a:link{
   color: #bfff00;
@@ -44,37 +40,68 @@ header a:active{
   color:#bfff00;
   text-decoration:none;
 }
-h1{
+section{
+  border-bottom: 2px solid #f7f7f7;
+  padding: 10px;
+}
+section p{
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  text-align: left;
   font-family: "Open Sans", Ariel, sans-serif;
-  letter-spacing: 4px;
-  font-size: 18px;
+  color: gray;
+  padding: 20px;
+}
+section img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35em;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 27px;
+  margin-top:30px;
   margin-bottom:0;
-  font-weight: 400;
+  font-weight: 700;
+  color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  text-align: left;
+
 }
 h2{  
-  font-family: "Open Sans", Ariel, sans-serif;
+  font-family: "Hevletica Neue", Ariel, sans-serif;
   letter-spacing: 4px;
   font-size: 19px;
   font-weight: 300;
   margin-bottom:0;
 }
 h4{
-  font-family: "Open Sans", Ariel, sans-serif;
+  font-family: "Hevletica Neue", Ariel, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
 h6{
   font-family: "Open Sans", Ariel, sans-serif;
   font-size: 12px;
-  font-weight: 300;
-  font-style:italic;
-  margin-top:0;
+  font-weight: 200;
+  margin-top: 1em;
   margin-bottom:0;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  text-align: left;
+  color: grey;
 }
 p{
   font-family: "Open Sans", Ariel, sans-serif;
-    font-size: 14px;
-    font-weight: 300; 
+  font-size: 14px;
+  font-weight: 200; 
 }
 ul li{
     font-family: "Open Sans", Ariel, sans-serif;
@@ -97,15 +124,15 @@ ul{
     font-weight: 300; 
 }
 a:link{
-  color: #bfff00;
+  color: #4e5a65;
   text-decoration:none;
 }
 a:visited{
-  color: #bfff00;
+  color: #4e5a65;
   text-decoration:none;
 } 
 a:hover{
-  color: #1d2700;
+  color: #ddff76;
   text-decoration: none;
 }
 a:active{
@@ -113,34 +140,30 @@ a:active{
   text-decoration:none;
 }
 .circular {
-    position: fixed;
-    float: right;
+  margin-left: auto;
+  margin-right: auto;
   width: 315px;
-  height: 315px;
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
+  height: 330px;
+  border-radius: 300px;
   background: url(https://lh3.googleusercontent.com/-GgCX8-b0teQ/AAAAAAAAAAI/AAAAAAAAAAA/1uZWoOQlnJI/photo.jpg) no-repeat;
 }
 #content{
   background-color: transparent;
-  position: relative;
-  float: center;
-  width: 36%;
-  margin: auto;
-  padding: 200px;
-  text-align: left;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: black;
   font-size: 15px;
   letter-spacing: 2px;
 }
 footer{
-  margin: 1em;
+  width:15em;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1.5em;
-  position: relative;
-  float:center;
   font-size: 8pt;
   font-family: Ariel, sans-serif;
-  color: #bfff00;
+  color: black;
+}
+i {
+  color: #c4c4c4;
+  float: right;
+  display: inline;
+  padding: .6em; 
 }
