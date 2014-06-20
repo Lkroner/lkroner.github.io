@@ -58,7 +58,7 @@ section img{
   text-align: left;
   margin-right: auto;
   margin-left: auto;
-  width: 45%;
+  width: 53%%;
   display: block;
 }
 #listingImage{
@@ -66,9 +66,9 @@ section img{
 /*  border: 5px dashed red;*/
   margin-left: 15em;
   margin-right: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 15em;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
+  width: 13em;
 }
 section p, section h6, section h2,
 section ul{
@@ -184,6 +184,7 @@ footer{
   font-family: Ariel, sans-serif;
   color: black;
 }
+/* <------ Icon Fonts ------> */
 i {
   color: #c4c4c4;
   float: right;
