@@ -23,16 +23,11 @@
           <li><a href="work_page.html">Work</a></li>
         </ul>  
       </header>
-       <div class="circular"></div>
         <div id="content">
           <section>
+             <img id="blogImage" src="imgs/object-orientated-programming.jpg">
              <h2>Object_Oriented Design vs Functional Programming</h2>
              <h6>May 27, 2014</h6>
-             <p>
-              <br>
-             <img src="http://www.virtuosimedia.com/includes/Files/Uploaded/Images/Articles/Lead/oop.png" width="97%">
-             <br>
-            </p>
              <p>
               The debate between when and where to use what type of programming is one that rages on today. On the two ends of the programming spectrum you have Functional Programming(FP) and Object-Oriented  Programming(OOP).
             </p>
@@ -44,32 +39,28 @@
             </p>
             <p>
               When you anticipate a different kind of software evolution:
-              <br>
-              <br>
-              * Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+              <ol>
+                <li> Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.</li>
+                <li> Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.</li>
+              </ol>
             </p>
             <p>
-              * Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
-              <br>
-              <br>
-              When evolution goes the wrong way, you have problems:
-              <br>
-              <br>
-              * Adding a new operation to an object-oriented program may require editing many class definitions to add a new method.
-              <br>
-              <br>
-              * Adding a new kind of thing to a functional program may require editing many function definitions to add a new case.
+              When evolution goes the wrong way, you have two problems:
+              <ol>
+                <li> Adding a new operation to an object-oriented program may require editing many class definitions to add a new method.</li>
+                <li> Adding a new kind of thing to a functional program may require editing many function definitions to add a new case.</li>
+              </ol>
             </p>
             <p>
               This problem has been well known for many years; in 1998, Phil Wadler dubbed it the "expression problem". Although some researchers think that the expression problem can be addressed with such language features as mixins, a widely accepted solution has yet to hit the mainstream.
-              <br>
-              <br>
+            </p>
+            <p>
               What are the typical problem definitions where functional programming is a better choice?
             </p>
             <p>
               Functional languages excel at manipulating symbolic data in tree form. A favorite example is compilers, where source and intermediate languages change seldom (mostly the same things), but compiler writers are always adding new translations and code improvements or optimizations (new operations on things). Compilation and translation more generally are "killer apps" for functional languages.
             </p>
-             <a href="blog_page.html">Back</a>
+            <h4><a href="blog_page.html">Back</a></h4>
           </section>  
               	
         </div>
