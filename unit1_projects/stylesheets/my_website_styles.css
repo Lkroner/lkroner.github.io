@@ -175,6 +175,9 @@ a:active{
   font-size: 16px;
   text-decoration:none; 
 }
+
+/* <----- Footer ------> */
+
 footer{
   width:15em;
   margin-left: auto;
@@ -184,36 +187,56 @@ footer{
   font-family: Ariel, sans-serif;
   color: black;
 }
+
+/* <----- Button -----> */
+
+.button {
+  background: white;
+  border: 1px dashed rgba(33, 68, 72, 0.59);
+  display: block;
+  float:center;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align:center;
+  width: 100px;
+}
+
 /* <------ Icon Fonts ------> */
+
 i {
   color: #c4c4c4;
-  float: right;
   display: inline;
+  float: right;
   padding: .6em; 
 }
+
+/* <----- Landing Page Animation -----> */
+
 #opening-image img{
-   border-top: 1px solid #f7f7f7;
-   height: 420px;
-   overflow: hidden;
-   padding: 0px;
-   width: 100%;
-   opacity: 0.95;
-   filter: alpha(opacity=95); /* For IE8 and earlier */
+  border-top: 1px solid #f7f7f7;
+  filter: alpha(opacity=95); /* For IE8 and earlier */
+  height: 420px;
+  opacity: 0.95;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
 }
 .animation{
-  width: 310px;
-  height: 300px;
-  border-radius: 300px;
-  padding: 100px;
-  border: 100px;
   background: url(https://lh3.googleusercontent.com/-GgCX8-b0teQ/AAAAAAAAAAI/AAAAAAAAAAA/1uZWoOQlnJI/photo.jpg);
 /*  background-color:rgba(0, 0, 0, 0.9);
-  opacity: 0.95;*/
-  margin: 0 auto; 
-  position: absolute; 
-  left: 0; 
+  opacity: 0.95;*/ 
+  border: 100px; 
+  border-radius: 300px;
+  height: 300px;
+  left: 0;
+  margin: 0 auto;
+  padding: 100px;
+  position: absolute;  
   right: 0;
-  
+  width: 310px;
   /* 
   shorthand would be 
   -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards; 
