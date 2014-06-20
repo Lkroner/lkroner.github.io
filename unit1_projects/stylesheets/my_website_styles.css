@@ -44,29 +44,38 @@ header a:active{
 section{
   border-bottom: 1px solid #f7f7f7;
   padding: 10px;
-  text-decoration:none; 
   margin-left: auto;
   margin-right: auto;
+/*  DO NOT PUT A WIDTH = Will lose section line division */
 }
 section img{
   margin-right: auto;
   margin-left: auto;
-  width: 45%%;
+  width: 30%%;
   display: block;
 }
-section a::first-child{
+.listing{
   text-align: left;
   margin-right: auto;
   margin-left: auto;
   width: 45%;
   display: block;
 }
-section p, section h6, section h1
-section ul, section a{
+#listingImage{
+  float: left;
+/*  border: 5px dashed red;*/
+  margin-left: 15em;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 15em;
+}
+section p, section h6, section h2,
+section ul{
   text-align: left;
   margin-right: auto;
   margin-left: auto;
-  width: 45%;
+  width: 53%%;
   display: block;
 }/* Need to figure out how to CSS select for links 
 embedded in text so that the do not have a width!! */
@@ -114,7 +123,7 @@ h4{
   color: #4e5a65;
   margin-right: auto;
   margin-left: auto;
-  width: 45%;
+  width: 53%;
 }
 h6{
   font-family: "Open Sans", Ariel, sans-serif;
@@ -134,7 +143,7 @@ ol li, ol, ul, ul li{
   text-align: left;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: 65%;
   text-align: left;
 }
 a:link{
