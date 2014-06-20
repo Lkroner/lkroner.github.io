@@ -48,8 +48,21 @@ section{
   margin-left: auto;
   margin-right: auto;
 }
-section p, section h4, section h6, section h1
-section ul, section img, section a{
+section img{
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%%;
+  display: block;
+}
+section a::first-child{
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+  display: block;
+}
+section p, section h6, section h1
+section ul, section a{
   text-align: left;
   margin-right: auto;
   margin-left: auto;
@@ -99,6 +112,9 @@ h4{
   margin-bottom:0;
   text-align: left;
   color: #4e5a65;
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
 }
 h6{
   font-family: "Open Sans", Ariel, sans-serif;
@@ -181,8 +197,8 @@ i {
   padding: 100px;
   border: 100px;
   background: url(https://lh3.googleusercontent.com/-GgCX8-b0teQ/AAAAAAAAAAI/AAAAAAAAAAA/1uZWoOQlnJI/photo.jpg);
-  background-color:rgba(0, 0, 0, 0.9);
-  opacity: 0.95;
+/*  background-color:rgba(0, 0, 0, 0.9);
+  opacity: 0.95;*/
   margin: 0 auto; 
   position: absolute; 
   left: 0; 
