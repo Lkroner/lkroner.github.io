@@ -74,6 +74,7 @@ footer .right {
 .intro {
 	color: white;
 	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight: 400;
 	text-shadow: 1px 1px #202020;
 }
 #home {
