@@ -1,0 +1,166 @@
+
+body { 
+	color: gray;
+	font-family: 'Helvetica Neue', cursive;
+  margin:0;
+  padding-top: 0;
+}
+footer {
+	background-color: #202020;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 200;
+	height: 100px;
+	padding: 5em;
+}
+footer .right {
+	float: right;
+}
+.big-intro {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80pt;
+	text-transform: italic;
+}
+.chart-container {
+	padding: 1em;
+	padding-top: 5em;
+	margin: 2em;
+}
+.chart {
+	padding: 2em;
+	text-align: center;
+}
+.fa-chevron-down {
+	position: absolute;
+	bottom: 75px;
+	text-align: center;
+}
+.fa-chevron-up{
+	position: absolute;
+	bottom: 75px;
+	text-align: center;
+}
+.header-small {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: 200;
+}
+.outro {
+	padding: 2em;
+	padding-top: 5em;
+	text-align: center;
+}
+.outro h4 {
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-weight: 200;
+}
+.icons a i{
+	padding: .2em;
+}
+.inverse {
+	color: white; 
+}
+.regular{
+	color: gray;
+}
+.logo {
+	font-family: "Montserrat", Helvetica, sans-serif;
+	font-size: 18pt;
+	font-weight: 300;
+	color: blue;
+	text-transform: uppercase;
+}
+.intro {
+	color: white;
+	font-family: "Open Sans", Helvetica, sans-serif;
+}
+#home {
+	background: url("../images/succulents.jpg");
+	background-attachment: fixed;
+	background-clip: initial;
+	background-origin: initial;
+	background-size: cover;
+  background-position: 100% 0; 	
+	background-repeat: no-repeat;	
+	color: white;	
+	min-height: 100%;
+	padding: 10em;
+	padding-top: 15em;
+	position: relative;	
+	opacity: .8;
+	text-align: center;
+}
+#contact {
+	background: url("../images/ocean_beach.jpg");
+	background-attachment: fixed;
+	background-clip: initial;
+	background-origin: initial;
+	background-size: cover;
+  background-position: 100% 0; 	
+	background-repeat: no-repeat;	
+	min-height: 400px;
+	padding: 10em;
+	position: relative;	
+}
+#blog {
+	background: url("../images/grafitti.png");
+	background-attachment: fixed;
+	background-clip: initial;
+	background-origin: initial;
+	background-size: cover;
+  background-position: 100% 0; 	
+	background-repeat: no-repeat;		
+	min-height: 100%;
+	padding: 10em;
+	position: relative;	
+}
+#break {
+	background-attachment: fixed;
+	background-color: white;
+	background-clip: initial;
+	background-origin: initial;
+	background-size: cover;
+  background-position: 100% 0; 	
+	background-repeat: no-repeat;		
+	min-height: 800px;
+	padding: 10em;
+	position: relative;	
+}
+#skills {
+	background-attachment: fixed;
+	background-color: #202020;
+	background-clip: initial;
+	background-origin: initial;
+	background-size: cover;
+  background-position: 100% 0; 	
+	background-repeat: no-repeat;		
+	min-height: 400px;
+	padding: 4em;
+	padding-top: 8em;
+	position: relative;
+	text-align: center;	
+}
+#skills li {
+	color: #bdbdbd;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: 200;
+	list-style: none;
+	padding: .5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#skills ul{
+  padding-top: 1em;
+}
+#skills a {
+	padding-top: 10em;
+}
+.movable {
+	background: url("../images/me1.jpg") no-repeat;
+	border-radius: 150px;
+	float: right;
+	min-height: 300px;
+	width: 300px;
+}
