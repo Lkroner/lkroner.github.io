@@ -1,27 +1,131 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Lauren Kroner</title>
-  <link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/my_website_styles.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<meta>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
- <body>
-   <title>Lauren Kroner</title>
-     <div class="icons">
-       <a href="https://github.com/Lkroner" alt="Github"><i class="fa fa-github fa-lg"></i></a>
-       <a href="https://twitter.com/lkroner" alt="Twitter"><i class="fa fa-twitter fa-lg"></i></a>
-       <a href="https://linkedin.com/pub/lauren-kroner/24/675/669/" alt="Linkedin"><i class="fa fa-linkedin fa-lg"></i></a>
-      </div>
-      <header>
-        <a href="about_page.html"><div class="animation"></div></a>
-      </header> 
-        <div id="content">
-        </div>
-            <footer>
-                  <p>© Lauren Kroner | 2014</p>
-            </footer>
- </body>
+<body>
+
+	<!--     Navbar      -->
+	<!-- *************** -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li class="navbar-item logo"><a href="#">Lauren Kroner</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+      		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars fa-2x"></i></a>
+      	  <ul class="dropdown-menu" role="menu">
+            <li><a href="#break">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+      	  </ul>
+      	</li>
+			</ul>
+		</div>
+	</div>
+
+	<!--    Home Page    -->
+	<!-- *************** -->
+	<section id="home" class="bg_parallax" data-type="background" data-speed="10">
+		  <div class="movable"></div>
+			<h1 class="big-intro">Hi! My name is Lauren</h1><br><br><br>
+			<a href="pdfs/Lauren_Kroner_Resume.pdf" class="btn btn-default">Download My Resume</a><br><br><br>
+    	<h4 class="intro">I'm a web developer out of San Francisco.
+    				Learn more about me:</h4>
+
+    	<a href="#" alt="Next-Section"><i class="fa fa-chevron-down fa-3x"></i></a>		
+	</section>
+
+	<!-- Experience Page -->
+	<!-- *************** -->
+	<section id="break" class="bg_parallax" data-type="background" data-speed="80">
+		<h1>Top Experience / <span class="header-small">What I've Worked With</span></h1>
+		<div class="chart-container">
+			<div class="chart col-xs-12 col-md-3 col-lg-3" data-percent="73">73%
+				<h4>HTML/CSS</h4>
+			</div>
+			<div class="chart col-xs-12 col-md-3 col-lg-3" data-percent="85">85%
+				<h4>JS/JQuery</h4>
+			</div>
+			<div class="chart col-xs-12 col-md-3 col-lg-3" data-percent="92">92%
+				<h4>Ruby/Rails</h4>
+			</div>
+			<div class="chart col-xs-12 col-md-3 col-lg-3" data-percent="86">86%
+				<h4>Git/Github</h4>
+			</div>
+		</div>
+
+		<a href="#" class="regular" alt="Next"><i class="fa fa-chevron-down fa-3x"></i></a>
+	</section>
+
+	<!--  Skills Banner  -->
+	<!-- *************** -->
+	<section id="skills" class="bg_parallax" data-type="background" data-speed="80">
+		<h4 class="inverse intro"> -- ADDITIONAL DEV SKILLS -- </h4>
+		<div class="col-md-4 col-lg-4 col-xs-12"> 
+			<ul>
+				<li>Agile</li>
+				<li>Test Driven Development</li>
+				<li>Backbone</li>
+			</ul> 
+		</div>
+		<div class="col-md-4 col-lg-4 col-xs-12"> 
+			<ul>
+				<li>AJAX</li>
+				<li>Deployment</li>
+				<li>Schema Design</li>
+			</ul> 
+		</div>
+		<div class="col-md-4 col-lg-4 col-xs-12"> 
+			<ul>
+				<li>Object Oriented Design</li>
+				<li>SQL/Active Record</li>
+				<li>Leadership</li>
+			</ul> 
+		</div>
+		<a class="col-lg-12 col-md-12 col-xs-12" href="#" alt="Next-Section"><i class="fa fa-chevron-down fa-3x"></i></a>
+	</section>
+
+	<!--  Contact Page   -->
+	<!-- *************** -->
+	<section id="contact" class="bg_parallax" data-type="background" data-speed="20">
+		<h1 class="inverse">Contact / <span class="header-small">Let's Talk</span></h1>
+		<div class="outro">
+			<div class="icons">
+        <a><i class="fa fa-github fa-4x"></i></a>
+			  <a><i class="fa fa-linkedin-square fa-4x"></i></a>
+			  <a><i class="fa fa-twitter fa-4x"></i></a>
+			</div>
+			<h4 class="inverse">Lauren.Kroner@gmail.com</h4>
+		</div>
+		
+		<a href="#" class="inverse" alt="Next"><i class="fa fa-chevron-up fa-3x"></i></a>	 
+	</section>
+
+	<!-- Portfolio Page  -->
+	<!-- *************** -->
+<!-- 	<section id="blog" class="bg_parallax" data-type="background" data-speed="40">
+    <h1 class="inverse">Portfolio / <span class="header-small">Sample Work</span></h1>
+		<a href="#" class="inverse" alt="Next"><i class="fa fa-chevron-up fa-3x"></i></a>	
+	</section> -->
+
+	<!--   Footer Page   -->
+	<!-- *************** -->
+	<footer>
+		<p> &copy; Lauren Kroner | 2014 </p>
+	</footer>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/easypiechart.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body> 
 </html>
